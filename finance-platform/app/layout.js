@@ -3,8 +3,10 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
-
-const inter = Inter({ subset: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  preload: false,
+});
 
 export const metadata = {
   title: "Picking Daisies",
